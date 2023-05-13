@@ -5,7 +5,6 @@ import json
 total_score = 0
 correct_score = 0
 incorrect_score = 0
-# total_question = len(question_bank)
 
 correct_answer_list = []
 incorrect_answer_list = []
@@ -13,17 +12,14 @@ quiz_type = ['Random Questions', 'Category Specific Questions']
 dashboard_action = ['Show Score', 'Show Correctly Answered', 'Show Incorrectly Answered','Exit']
 
 
-
 with open('question_bank.json', 'r') as file:
     question_data = json.load(file)
-
 
 
 def showAnswer(ciAnswer_list):
     print()
     for indx,indi_data in enumerate(ciAnswer_list):
         print(indx +1,f'Question - {indi_data[0]} || Correct Answer - {indi_data[1]} || Your Answer - {indi_data[2]}')
-
 
 
 def messages(messageType, opt='none'):
@@ -76,12 +72,10 @@ def determineUserChoice(quiz_type, msg_type):
         return determineUserChoice(quiz_type, msg_type)
 
 
-
 # it prints options for question being asked
 def print_option(options):
     for option in options:
         print(option)
-
 
 
 def user_input(random_question):
@@ -108,9 +102,8 @@ def qaAppending(ansList, question, user_answer):
     ansList.append((question[0], question[1][2:], user_answer))
 
 
-
 def quizzBody(default_category='none'):
-    global total_score, correct_score, incorrect_score, correct_answer_list, incorrect_answer_list
+    global total_score, correct_score, incorrect_score, correct_answer_list, incorrect_answer_list, total_question
     for i in range(5):
         if default_category == 'none':
             random_category = random.choice(list(question_data))
@@ -138,7 +131,6 @@ def quizzBody(default_category='none'):
             del question_data[default_category][de]
 
 
-
 def initilizeAction(user_choice):
     if user_choice == quiz_type.index('Random Questions'):
         print(f'Great! Here are 5 random questions from categories {[key for key in question_data.keys()]}...')
@@ -154,11 +146,35 @@ def initilizeAction(user_choice):
         print(messages('farewell'))
 
 
+def dashBoardAction(dash_action):
+    if dash_action == 0:
+        print('------------------------------------')
+        print(f'Your total score is {total_score}.')
+        dashBoardAction(determineUserChoice(dashboard_action, 'fainp'))
+    elif dash_action == 1:
+        print('-----------------')
+        if len((correct_answer_list)) <= 0:
+            print(messages('0qnr'))
+        else:
+            print(f'You got {len(correct_answer_list)} question/s right.')
+            showAnswer(correct_answer_list)
+        dashBoardAction(determineUserChoice(dashboard_action, 'fainp'))
+    elif dash_action == 2:
+        print('-----------------')
+        if len((incorrect_answer_list)) <= 0:
+            print(messages('alltrue'))
+        else:
+            print(f'You got {len(incorrect_answer_list)} question/s incorrect.')
+            showAnswer(incorrect_answer_list)
+        dashBoardAction(determineUserChoice(dashboard_action, 'fainp'))
+    else:
+        print('-' * len(messages('farewell')) ) 
+        print(messages('farewell'))
+
 
 def performUserAction():
     initilizeAction(determineUserChoice(quiz_type, 'qsinp'))
-    dashaction_user = determineUserChoice(dashboard_action, 'fainp')
-    print(dashaction_user)
+    dashBoardAction(determineUserChoice(dashboard_action, 'fainp'))
     
     
 performUserAction()
