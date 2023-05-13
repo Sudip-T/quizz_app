@@ -1,0 +1,237 @@
+{
+    "Math": [
+        [
+            "What is the value of Pi to four individual decimal places?",
+            "A. 3.1416",
+            [
+                "A. 3.1416",
+                "B. 3.2001",
+                "C. 3.1314"
+            ]
+        ],
+        [
+            "How many vertices are present on a cube? ",
+            "B. 8",
+            [
+                "A. 6",
+                "B. 8",
+                "C. 6"
+            ]
+        ],
+        [
+            "Solve the following equation: -15 + (-5x)=0. ",
+            "C. -3C",
+            [
+                "A. 0",
+                "B. -3.0",
+                "C. -3"
+            ]
+        ],
+        [
+            "How many hours are there in a year (rounded to the nearest hour)?",
+            "B. 8760",
+            [
+                "A. 8788",
+                "B. 8760",
+                "C. 9020"
+            ]
+        ],
+        [
+            "Which prime number is closest to 100? ",
+            "C. 101",
+            [
+                "A. 99.99",
+                "B. 99",
+                "C. 101"
+            ]
+        ]
+    ],
+    "Sports": [
+        [
+            "Which country won the first ever football world cup?",
+            "A",
+            [
+                "A. Uruguay",
+                "B. Brazil",
+                "C. England"
+            ]
+        ],
+        [
+            "Name a player to have 7 Ballon dor",
+            "B",
+            [
+                "A. Ronaldo",
+                "B. Lionel Messi",
+                "C. Mbappe"
+            ]
+        ],
+        [
+            "Full-form of EPL",
+            "C",
+            [
+                "A. English Premera League",
+                "B. English Pakistan League",
+                "C. English Premier League"
+            ]
+        ],
+        [
+            "How many teams are there in world cup?",
+            "A",
+            [
+                "A. 32",
+                "B. 48",
+                "C. 24"
+            ]
+        ],
+        [
+            "Who won 2022 world cup?",
+            "C",
+            [
+                "A. Moroco",
+                "B. France",
+                "C. Argentina"
+            ]
+        ]
+    ],
+    "Python Programming": [
+        [
+            "Full-form of OOP",
+            "A",
+            [
+                "A. object oriented programming",
+                "B. oriented object programming",
+                "C. other other object programming"
+            ]
+        ],
+        [
+            "Which function adds an element at the end of the list?",
+            "B",
+            [
+                "A. add",
+                "B. append",
+                "C. join"
+            ]
+        ],
+        [
+            "Which function outputs result into console?",
+            "C",
+            [
+                "A. output",
+                "B. display",
+                "C. print"
+            ]
+        ],
+        [
+            "Which function is used to seperate string based on specific character?",
+            "A",
+            [
+                "A. split",
+                "B. cut",
+                "C. seperate"
+            ]
+        ],
+        [
+            "def keyword is used to describe:",
+            "C",
+            [
+                "A.. Variable",
+                "B. OOP",
+                "C. Function"
+            ]
+        ]
+    ],
+    "Technology": [
+        [
+            "How many Bits makes one Byte?",
+            "A",
+            [
+                "A. 8 Bits",
+                "B. 12 Bits",
+                "C. 4 bITS"
+            ]
+        ],
+        [
+            "What is the full form of RAM?\t",
+            "B",
+            [
+                "A. Rare Excess Memeory",
+                "B. Random Access Memory",
+                "C. Random Accreidted Management"
+            ]
+        ],
+        [
+            "1 Kilobyte is equal to how many bytes?",
+            "C",
+            [
+                "A. 1020 bytes",
+                "B. 1000 bytes",
+                "C. 1024 bytes"
+            ]
+        ],
+        [
+            "Keyboard, Mouse, Joystick are examples of Output devices or Input Devices?",
+            "A",
+            [
+                "A. Input Devices",
+                "B. Output Devices",
+                "C. None"
+            ]
+        ],
+        [
+            "Who was the programmer of Ms-Dos operating system?",
+            "C",
+            [
+                "A. Elon Musk",
+                "B. Steve Jobs",
+                "C. Bill Gates"
+            ]
+        ]
+    ],
+    "History": [
+        [
+            "Where was Martin Luther King, Jr. born?",
+            "A",
+            [
+                "A. Atlanta, Georgia",
+                "B. Washington",
+                "C. South Africa"
+            ]
+        ],
+        [
+            "In what year did child labor laws start in the United States?",
+            "B",
+            [
+                "A. 1999",
+                "B. 1938",
+                "C. 1972"
+            ]
+        ],
+        [
+            "When did the construction of the Great Wall of China begin?",
+            "C",
+            [
+                "A. 8th century BC",
+                "B. 6th century BC",
+                "C. 7th century BC"
+            ]
+        ],
+        [
+            "In what year did Libya gain independence from Italy?",
+            "A",
+            [
+                "A. 1951",
+                "B. 1923",
+                "C. 1911"
+            ]
+        ],
+        [
+            "What year did India gain independence from Britain?",
+            "C",
+            [
+                "A. 1899",
+                "B. 1990",
+                "C. 1947"
+            ]
+        ]
+    ]
+}
